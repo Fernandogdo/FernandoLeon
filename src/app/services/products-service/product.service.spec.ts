@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
 import { ProductService } from './product.service';
-<<<<<<< HEAD
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { Product } from '../../models/product.mode';
 import { environment } from '../../../environments/environment';
@@ -22,27 +21,11 @@ describe('ProductService', () => {
 
   afterEach(() => {
     httpMock.verify(); // Verifica que no haya solicitudes pendientes
-=======
-import { provideHttpClient } from '@angular/common/http';
-
-describe('ProductService', () => {
-  let service: ProductService;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [
-        provideHttpClient(), 
-        ProductService
-      ]
-    });
-    service = TestBed.inject(ProductService);
->>>>>>> e331072 (subida de la app Angular)
   });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
-<<<<<<< HEAD
 
   it('should fetch products from API', () => {
     const mockProducts: { data: Product[] } = {
@@ -106,6 +89,4 @@ describe('ProductService', () => {
     expect(req.request.method).toBe('DELETE');
     req.flush({ message: 'Producto eliminado' });
   });
-=======
->>>>>>> e331072 (subida de la app Angular)
 });
