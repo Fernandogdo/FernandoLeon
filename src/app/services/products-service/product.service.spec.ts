@@ -20,7 +20,7 @@ describe('ProductService', () => {
   });
 
   afterEach(() => {
-    httpMock.verify(); // Verifica que no haya solicitudes pendientes
+    httpMock.verify(); 
   });
 
   it('should be created', () => {
