@@ -72,7 +72,6 @@ export class ProductAddComponent implements OnInit {
       this.loading = true;
       this.productService.getProductById(this.id).subscribe({
         next: (productData) => {
-          console.log('📦 Producto cargado:', productData);
           this.product = { ...productData }; // 📌 Carga los datos en el formulario
           this.loading = false;
         },
