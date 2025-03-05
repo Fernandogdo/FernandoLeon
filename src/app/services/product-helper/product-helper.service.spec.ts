@@ -24,7 +24,7 @@ describe('ProductHelperService', () => {
 
   describe('updateDateRevision', () => {
     it('debería devolver una fecha un año después de la fecha de lanzamiento', () => {
-      // Se agregan todas las propiedades requeridas de la interfaz Product
+      // Product
       const producto: Product = {
         id: '1',
         name: 'Producto de prueba',
