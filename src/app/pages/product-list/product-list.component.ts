@@ -56,10 +56,7 @@ export class ProductListComponent implements OnInit {
   // Buscar productos en tiempo real
   filterProducts() {
     this.filteredProducts = this.products.filter((product) => {
-      console.log(
-        '🚀 ~ ProductListComponent ~ filterProducts ~ product:',
-        product
-      );
+     
       return Object.values(product).some((value) =>
         value.toString().toLowerCase().includes(this.searchText.toLowerCase())
       );
